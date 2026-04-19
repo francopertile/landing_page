@@ -315,6 +315,43 @@
             line-height: 1.6;
             font-size: 1.1rem;
         }
+
+        /* Utilidades Generales */
+        .container { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+        .cta-link { color: #FBD148; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 14px; }
+        .section-title { text-align: center; font-size: 28px; letter-spacing: 2px; margin-bottom: 50px; }
+        .section-title span { font-weight: 300; }
+
+        /* BLOQUE 1: Presentación */
+        .about-section { background-color: #ffffff; color: #333; }
+        .about-top-row { display: flex; gap: 40px; margin-bottom: 60px; align-items: center; }
+        .about-left { flex: 1; display: flex; gap: 20px; }
+        .accent-mark { width: 40px; height: auto; background-color: #FBD148; clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%); }
+        .about-left h2 { font-size: 32px; font-weight: 700; line-height: 1.2; margin: 0; }
+        .about-right { flex: 1; }
+
+        /* Cajas de Estadísticas */
+        .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .stat-box { background: #f9f9f9; padding: 40px 30px; border: 1px solid #eee; text-align: left; }
+        .stat-box h3 { font-size: 40px; color: #FBD148; margin-bottom: 10px; font-weight: 700; }
+        .stat-box p { font-size: 14px; color: #666; font-weight: 500; text-transform: uppercase; margin: 0; }
+
+        /* BLOQUE 2: Servicios (Vanos) */
+        .services-section { background-color: #f4f4f4; }
+        .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .service-card.placeholder { background-color: #e0e0e0; height: 350px; position: relative; overflow: hidden; }
+        .service-overlay { position: absolute; bottom: 0; left: 0; width: 100%; height: 60%; background: rgba(0, 0, 0, 0.7); clip-path: polygon(0 30%, 100% 100%, 0 100%); display: flex; align-items: flex-end; padding: 20px; }
+        .service-overlay h4 { color: #ffffff; margin: 0; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* BLOQUE 3: Obras Destacadas (Grilla sin márgenes) */
+        .projects-section { padding-bottom: 80px; }
+        .projects-header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; }
+        .projects-header h2 { font-size: 24px; font-weight: 300; margin: 0; }
+        .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; width: 100%; max-width: 100%; }
+        .project-box { aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; }
+        .project-box span { color: #fff; font-weight: bold; letter-spacing: 2px; }
+        .placeholder-dark { background-color: #333333; }
+        .placeholder-light { background-color: #444444; }
     </style>
 </head>
 
@@ -405,12 +442,79 @@
         </div>
     </section>
 
-    <!-- CONTENIDO DE RELLENO PARA MOSTRAR EL SCROLL -->
-    <section class="dummy-content">
-        <h2>Construcción a Gran Escala</h2>
-        <p>Haz scroll hacia arriba y hacia abajo para observar cómo el menú de navegación cambia suavemente de un estado
-            transparente y elegante sobre la fotografía, a un estado sólido y utilitario al navegar por el contenido de
-            la página. Esta es la marca registrada de un desarrollo Front-End premium.</p>
+    <!-- BLOQUE 1: PRESENTACIÓN -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-top-row">
+                <div class="about-left">
+                    <div class="accent-mark"></div>
+                    <h2>Construimos, asesoramos, proyectamos y diseñamos soluciones.</h2>
+                </div>
+                <div class="about-right">
+                    <p>Nuestro compromiso es crear estructuras duraderas con los más altos estándares de la industria.</p>
+                    <a href="#" class="cta-link">Conocer más</a>
+                </div>
+            </div>
+            <div class="stats-row">
+                <div class="stat-box">
+                    <h3>2017</h3>
+                    <p>Año de fundación</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+48</h3>
+                    <p>Obras finalizadas</p>
+                </div>
+                <div class="stat-box">
+                    <h3>+254MIL</h3>
+                    <p>Metros cuadrados construidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE 2: SERVICIOS -->
+    <section class="services-section">
+        <div class="container">
+            <h2 class="section-title">INGENIERÍA DE VALOR <br><span>APLICADA A CADA PROYECTO</span></h2>
+            <div class="services-grid">
+                <div class="service-card placeholder">
+                    <div class="service-overlay">
+                        <h4>Residenciales</h4>
+                    </div>
+                </div>
+                <div class="service-card placeholder">
+                    <div class="service-overlay">
+                        <h4>Industriales</h4>
+                    </div>
+                </div>
+                <div class="service-card placeholder">
+                    <div class="service-overlay">
+                        <h4>Comerciales</h4>
+                    </div>
+                </div>
+                <div class="service-card placeholder">
+                    <div class="service-overlay">
+                        <h4>Proyectos Especiales</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOQUE 3: OBRAS DESTACADAS -->
+    <section class="projects-section">
+        <div class="container projects-header">
+            <h2><strong>OBRAS</strong> DESTACADAS</h2>
+            <a href="#" class="cta-link">Ver todas</a>
+        </div>
+        <div class="projects-grid">
+            <div class="project-box placeholder-dark"><span>PROYECTO 01</span></div>
+            <div class="project-box placeholder-light"><span>PROYECTO 02</span></div>
+            <div class="project-box placeholder-dark"><span>PROYECTO 03</span></div>
+            <div class="project-box placeholder-light"><span>PROYECTO 04</span></div>
+            <div class="project-box placeholder-dark"><span>PROYECTO 05</span></div>
+            <div class="project-box placeholder-light"><span>PROYECTO 06</span></div>
+        </div>
     </section>
 
     <!-- SCRIPT PARA EL EFECTO SCROLL -->
