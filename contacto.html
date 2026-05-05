@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson - Reconstrucción Elegante</title>
+    <title>Contacto | Anderson</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
-<body class="page-home">
-
-    <!-- EL HEADER Y NAVEGACIÓN -->
-    <header id="header" class="header">
+<body class="page-contacto">
+<header id="header" class="header">
         <div class="header-container">
 
             <!-- Columna del Logo -->
@@ -46,126 +42,47 @@
         </div>
     </header>
 
-    <!-- EL HERO SECTION -->
-    <section class="hero-section">
-        <!-- Video de fondo -->
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="./images/hero_1.webp">
-            <source src="./videos/hero-background.webm" type="video/webm">
-        </video>
+
+    <!-- ============ SUBPAGE HERO ============ -->
+    <section class="subpage-hero" style="background-image: url('assets/placeholder-hero-contacto.webp');">
+        <!-- TODO: replace with real asset -->
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Making a <span>Difference</span></h1>
-            <p>in the lives of our people, customers and community.</p>
+            <h1 class="subpage-hero-title"><span>Contacto</span></h1>
         </div>
     </section>
 
-    <!-- BLOQUE 1: PRESENTACIÓN -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-top-row">
-                <div class="about-left">
-                    <div class="accent-mark"></div>
-                    <h2>Construimos, asesoramos, proyectamos y diseñamos soluciones.</h2>
-                </div>
-                <div class="about-right">
-                    <p>Nuestro compromiso es crear estructuras duraderas con los más altos estándares de la industria.</p>
-                    <a href="#" class="cta-link">Conocer más</a>
-                </div>
+    <!-- ============ CONTACTO PAGE ============ -->
+    <section id="contacto" class="container" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="contacto-layout">
+            <div class="contacto-left">
+                <h2 class="section-title" style="text-align:left;">Envíanos un <span>Mensaje</span></h2>
+                <form class="contact-form" action=""> <!-- TODO: configure form submission endpoint -->
+                    <label>Nombre <input type="text" name="nombre" required></label>
+                    <label>Empresa <input type="text" name="empresa"></label>
+                    <label>Email <input type="email" name="email" required></label>
+                    <label>Teléfono <input type="tel" name="telefono"></label>
+                    <label>Mensaje <textarea name="mensaje" rows="5" required></textarea></label>
+                    <button type="submit" class="cta-button">Enviar mensaje</button>
+                </form>
             </div>
-            <div class="stats-row">
-                <div class="stat-box">
-                    <h3>2017</h3>
-                    <p>Año de fundación</p>
+            <div class="contacto-right">
+                <h2 class="section-title" style="text-align:left;">Nuestra <span>Ubicación</span></h2>
+                <div class="contacto-details" style="margin-bottom: 30px;">
+                    <p><strong>Dirección:</strong> <!-- TODO: client info -->Av. Ejemplo 123, Asunción, Paraguay</p>
+                    <p><strong>Teléfono:</strong> +595 21 000 000</p>
+                    <p><strong>Email:</strong> info@anderson.com.py</p>
                 </div>
-                <div class="stat-box">
-                    <h3>+48</h3>
-                    <p>Obras finalizadas</p>
-                </div>
-                <div class="stat-box">
-                    <h3>+254MIL</h3>
-                    <p>Metros cuadrados construidos</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOQUE 2: TARJETAS RETRATO -->
-    <section class="portrait-section">
-        <div class="portrait-grid">
-            <div class="portrait-card">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Residenciales</h3>
-                </div>
-            </div>
-            <div class="portrait-card">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Industriales</h3>
-                </div>
-            </div>
-            <div class="portrait-card">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Comerciales</h3>
-                </div>
-            </div>
-            <div class="portrait-card">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Proyectos<br>Especiales</h3>
+                <div class="map-embed">
+                    <!-- TODO: embed Google Maps iframe -->
+                    <div style="width:100%; height:100%; background:#e0e0e0; display:flex; align-items:center; justify-content:center; color:#666;">Mapa de Google</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BLOQUE 3: SERVICIOS -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="section-title">INGENIERÍA DE VALOR <br><span>APLICADA A CADA PROYECTO</span></h2>
-            <div class="services-grid">
-                <div class="service-card placeholder">
-                    <div class="service-overlay">
-                        <h4>Residenciales</h4>
-                    </div>
-                </div>
-                <div class="service-card placeholder">
-                    <div class="service-overlay">
-                        <h4>Industriales</h4>
-                    </div>
-                </div>
-                <div class="service-card placeholder">
-                    <div class="service-overlay">
-                        <h4>Comerciales</h4>
-                    </div>
-                </div>
-                <div class="service-card placeholder">
-                    <div class="service-overlay">
-                        <h4>Proyectos Especiales</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- BLOQUE 3: OBRAS DESTACADAS -->
-    <section class="projects-section">
-        <div class="container projects-header">
-            <div>
-                <h2><strong>PROYECTOS</strong> SELECCIONADOS</h2>
-                <p style="margin-top: 10px; color: #666;">Una selección representativa de nuestro trabajo reciente.</p>
-            </div>
-            <a href="proyectos.html" class="cta-link">Ver todos los proyectos →</a>
-        </div>
-        <div class="projects-grid">
-            <div class="project-box placeholder-dark"><span>PROYECTO 01</span></div>
-            <div class="project-box placeholder-light"><span>PROYECTO 02</span></div>
-            <div class="project-box placeholder-dark"><span>PROYECTO 03</span></div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer-section">
+<footer class="footer-section">
         <div class="footer-container">
 
             <!-- Zona 1: Footer Top -->
@@ -240,9 +157,6 @@
 
         </div>
     </footer>
-
-    <!-- SCRIPT PARA EL EFECTO SCROLL -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
