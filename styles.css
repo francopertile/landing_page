@@ -109,19 +109,21 @@
         .logo-link {
             display: flex;
             align-items: center;
-            gap: 12px; /* Espacio entre el ícono y el texto */
-            height: 35px;
+            gap: 14px; /* Espacio entre el ícono y el texto */
+            height: 42px; /* Mayor presencia y elegancia */
             padding-right: 30px;
             border-right: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria elegante */
             text-decoration: none;
             transition: border-color 0.4s ease;
         }
 
-        /* Dimensiones estrictas para el nuevo SVG transparente */
+        /* Dimensiones del logo y efecto binario */
         .logo-icon {
-            height: 28px;
+            height: 34px;
             width: auto;
             object-fit: contain;
+            filter: brightness(0) invert(1); /* Logo blanco en header transparente */
+            transition: filter 0.4s ease;
         }
 
         .light-header {
@@ -193,6 +195,11 @@
         /* Ajuste del comportamiento al hacer scroll */
         .header.scrolled .logo-link {
             border-right-color: rgba(0, 0, 0, 0.15); /* La línea se oscurece */
+        }
+
+        /* Logo icon se vuelve negro al hacer scroll */
+        .header.scrolled .logo-icon {
+            filter: brightness(0);
         }
 
         
@@ -358,9 +365,13 @@
         .footer-logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            height: 35px;
+            gap: 14px;
+            height: 42px;
             text-decoration: none;
+        }
+
+        .footer-logo-area .logo-icon {
+            filter: brightness(0) invert(1); /* Logo blanco en footer */
         }
 
         .footer-tagline {
@@ -599,6 +610,17 @@
 }
 
 /* ============ NOSOTROS PAGE ============ */
+.page-nosotros .subpage-hero {
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+@media (max-width: 768px) {
+    .page-nosotros .subpage-hero {
+        aspect-ratio: auto;
+        height: 40vh;
+    }
+}
+
 .liderazgo-grid, .valores-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
