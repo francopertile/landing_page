@@ -109,7 +109,7 @@
         .logo-link {
             display: flex;
             align-items: center;
-            gap: 14px; /* Espacio entre el ícono y el texto */
+            gap: 6px; /* Espacio entre el ícono y el texto */
             height: 42px; /* Mayor presencia y elegancia */
             padding-right: 30px;
             border-right: 1px solid rgba(255, 255, 255, 0.3); /* Línea divisoria elegante */
@@ -119,10 +119,9 @@
 
         /* Dimensiones del logo y efecto binario */
         .logo-icon {
-            height: 34px;
+            height: 42px;
             width: auto;
             object-fit: contain;
-            filter: brightness(0) invert(1); /* Logo blanco en header transparente */
             transition: filter 0.4s ease;
         }
 
@@ -197,9 +196,9 @@
             border-right-color: rgba(0, 0, 0, 0.15); /* La línea se oscurece */
         }
 
-        /* Logo icon se vuelve negro al hacer scroll */
+        /* Logo icon ya no se vuelve negro, mantiene su color original */
         .header.scrolled .logo-icon {
-            filter: brightness(0);
+            /* filter removido */
         }
 
         
@@ -371,7 +370,7 @@
         }
 
         .footer-logo-area .logo-icon {
-            filter: brightness(0) invert(1); /* Logo blanco en footer */
+            /* filter removido para mantener el color original */
         }
 
         .footer-tagline {
