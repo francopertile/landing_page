@@ -354,27 +354,49 @@
             cursor: pointer;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            background-color: #222;
         }
 
         .portrait-card:hover { transform: scale(1.02); }
 
-        .portrait-card:nth-child(1) {
-            background: linear-gradient(160deg, #5c3d28 0%, #8c6040 35%, #3d2415 65%, #6b4830 100%);
-        }
-        .portrait-card:nth-child(2) {
-            background: linear-gradient(160deg, #1a2d3d 0%, #2e506e 35%, #0f1e2e 65%, #243d55 100%);
-        }
-        .portrait-card:nth-child(3) {
-            background: linear-gradient(160deg, #282828 0%, #484848 35%, #181818 65%, #383838 100%);
-        }
-        .portrait-card:nth-child(4) {
-            background: linear-gradient(160deg, #201d10 0%, #3e3820 35%, #100f08 65%, #2c2810 100%);
+        /* Images inside portrait cards */
+        .portrait-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+            transition: opacity 0.5s ease;
         }
 
+        .portrait-img-default {
+            opacity: 1;
+        }
+
+        .portrait-img-hover {
+            opacity: 0;
+        }
+
+        .portrait-card:hover .portrait-img-default {
+            opacity: 0;
+        }
+
+        .portrait-card:hover .portrait-img-hover {
+            opacity: 1;
+        }
+
+        /* Subtle dark filter + stronger gradient at bottom for titles */
         .portrait-overlay {
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.32);
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.15) 0%,
+                rgba(0, 0, 0, 0.18) 50%,
+                rgba(0, 0, 0, 0.55) 85%,
+                rgba(0, 0, 0, 0.72) 100%
+            );
             z-index: 1;
         }
 
@@ -385,7 +407,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             padding: 30px;
         }
 
