@@ -239,11 +239,82 @@
         .about-left h2 { font-size: 32px; font-weight: 700; line-height: 1.2; margin: 0; }
         .about-right { flex: 1; }
 
-        /* Cajas de Estadísticas */
+        /* Cajas de Estadísticas (legacy — kept for subpages) */
         .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
         .stat-box { background: #f9f9f9; padding: 40px 30px; border: 1px solid #eee; text-align: left; }
         .stat-box h3 { font-size: 40px; color: #FBD148; margin-bottom: 10px; font-weight: 700; }
         .stat-box p { font-size: 14px; color: #666; font-weight: 500; text-transform: uppercase; margin: 0; }
+
+        /* === BANNER OBRERO === */
+        .obrero-banner {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .obrero-banner-img-wrapper {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .obrero-banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left center;
+            filter: blur(1.5px);
+        }
+
+        /* Fade from white (left) → transparent (right) so text is readable */
+        .obrero-banner-fade {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 1) 0%,
+                rgba(255, 255, 255, 0.92) 20%,
+                rgba(255, 255, 255, 0.65) 45%,
+                rgba(255, 255, 255, 0.15) 70%,
+                rgba(255, 255, 255, 0) 100%
+            );
+        }
+
+        .obrero-banner-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .obrero-banner-content h2 {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .obrero-banner-content h2 span {
+            color: #c5960a;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+
+        .obrero-banner-content p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+            max-width: 420px;
+        }
 
         /* BLOQUE 2: Servicios (Vanos) */
         .services-section { background-color: #f4f4f4; }
@@ -538,6 +609,11 @@
 
             /* Footer */
             .footer-top { flex-direction: column; gap: 40px; }
+
+            /* Banner Obrero */
+            .obrero-banner { height: 240px; }
+            .obrero-banner-content h2 { font-size: 24px; }
+            .obrero-banner-content p { font-size: 14px; max-width: 340px; }
         }
 
         /* ──── MÓVIL (max-width: 480px) ──── */
@@ -578,6 +654,13 @@
                 text-align: center;
                 gap: 16px;
             }
+
+            /* Banner Obrero */
+            .obrero-banner { height: 200px; }
+            .obrero-banner-content { padding: 0 20px; gap: 14px; }
+            .obrero-banner-content h2 { font-size: 20px; }
+            .obrero-banner-content p { font-size: 13px; max-width: 260px; }
+            .obrero-banner-content .accent-mark { width: 6px; min-width: 6px; }
         }
 
 
