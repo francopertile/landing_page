@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anderson - Arquitectos e Ingenieros</title>
+    <title>Anderson - Nuestras Capacidades</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="page-home">
+<body class="page-capacidades-v2">
 
     <!-- EL HEADER Y NAVEGACIÓN -->
     <header id="header" class="header">
@@ -49,109 +49,137 @@
                 </ul>
             </nav>
 
+            <button class="hamburger-btn" aria-label="Abrir menú">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
+
+        <nav class="mobile-nav-panel">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios-v2.html">Servicios</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
     </header>
 
-    <!-- EL HERO SECTION -->
-    <section class="hero-section">
-        <!-- Video de fondo -->
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="./images/hero_1.webp">
-            <source src="./videos/herovideo_lastedition.webm" type="video/webm">
-        </video>
+    <!-- 1. HERO SECTION -->
+    <section class="servicios-v2-hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Marcando la <span>Diferencia</span></h1>
-            <p>en la vida de nuestra gente, clientes y comunidad.</p>
+            <h1>Nuestras <span class="text-accent">Capacidades</span></h1>
         </div>
     </section>
 
-    <!-- BLOQUE 1: PRESENTACIÓN -->
-    <section class="about-section">
+    <!-- 2. ENFOQUE / APPROACH -->
+    <section class="approach-section">
         <div class="container">
-            <div class="about-top-row">
-                <div class="about-left">
+            <div class="section-title">Nuestro <span>Enfoque</span></div>
+
+            <!-- Row 1 -->
+            <div class="approach-row">
+                <div class="approach-img-col">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000&auto=format&fit=crop" alt="Planificación Integral">
+                </div>
+                <div class="approach-text-col">
                     <div class="accent-mark"></div>
-                    <h2>Construimos, asesoramos, proyectamos y diseñamos soluciones.</h2>
+                    <h3>Planificación Integral</h3>
+                    <p>En Anderson, abordamos cada proyecto con una visión panorámica. Desde la etapa de factibilidad hasta la entrega final, analizamos minuciosamente cada variable para asegurar la eficiencia en costos y plazos, garantizando que su inversión rinda al máximo desde el día cero.</p>
                 </div>
-                <div class="about-right">
-                    <p>Nuestro compromiso es crear estructuras duraderas con los más altos estándares de la industria.
-                    </p>
-                    <a href="nosotros.html" class="cta-link">Conocer más</a>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="approach-row reverse">
+                <div class="approach-img-col">
+                    <img src="https://images.unsplash.com/photo-1541888086225-b284e3dfd3e7?q=80&w=1000&auto=format&fit=crop" alt="Gestión de Obra">
+                </div>
+                <div class="approach-text-col">
+                    <div class="accent-mark"></div>
+                    <h3>Gestión de Obra</h3>
+                    <p>Nuestro equipo en terreno está compuesto por ingenieros y arquitectos altamente calificados que supervisan rigurosamente el avance del proyecto. Implementamos estrictos controles de calidad y seguridad, mitigando riesgos y asegurando la excelencia constructiva.</p>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="approach-row">
+                <div class="approach-img-col">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1000&auto=format&fit=crop" alt="Metodología BIM">
+                </div>
+                <div class="approach-text-col">
+                    <div class="accent-mark"></div>
+                    <h3>Metodología BIM</h3>
+                    <p>Apostamos por la tecnología como pilar de nuestra arquitectura de la información constructiva. Con BIM (Building Information Modeling), anticipamos interferencias, optimizamos recursos y proporcionamos al cliente una visualización clara y transparente del ciclo de vida de la obra.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- BANNER OBRERO -->
-    <section class="obrero-banner">
-        <div class="obrero-banner-img-wrapper">
-            <img src="./images/seccion_obrero.png" alt="Obrero en obra" class="obrero-banner-img">
-        </div>
-        <div class="obrero-banner-fade"></div>
-        <div class="obrero-banner-content">
-            <div class="accent-mark"></div>
-            <div>
-                <h2>Comprometidos con la <span>excelencia</span></h2>
-                <p>Cada proyecto refleja nuestra dedicación a la calidad, la seguridad y la innovación en cada etapa de
-                    la construcción.</p>
-            </div>
-        </div>
-    </section>
+    <!-- 3. SERVICE BOXES GRID (Turner Inspired) -->
+    <section class="turner-service-section">
+        <div class="container" style="padding-top: 0;">
+            <div class="section-title white" style="margin-bottom: 60px;">Áreas de <span>Especialización</span></div>
+            <div class="turner-grid">
+                
+                <!-- Box 1 -->
+                <div class="turner-box">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop" alt="Residencial">
+                    <div class="turner-box-overlay">
+                        <div class="turner-title">Residencial</div>
+                        <div class="turner-hidden-content">
+                            <p>Desarrollamos complejos habitacionales, edificios de departamentos y residencias premium enfocados en el confort, la estética y la sostenibilidad.</p>
+                            <a href="proyectos.html" class="turner-cta">Ver Proyectos 
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- BLOQUE 2: TARJETAS RETRATO -->
-    <section class="portrait-section">
-        <div class="portrait-grid">
-            <div class="portrait-card">
-                <img src="./images/obra_civil_1.jpeg" alt="Obras Civiles" class="portrait-img portrait-img-default">
-                <img src="./images/obra_civil.jpg" alt="Obras Civiles hover" class="portrait-img portrait-img-hover">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Civiles</h3>
+                <!-- Box 2 -->
+                <div class="turner-box">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Industrial">
+                    <div class="turner-box-overlay">
+                        <div class="turner-title">Industrial</div>
+                        <div class="turner-hidden-content">
+                            <p>Naves industriales, plantas de procesamiento y centros logísticos optimizados para la máxima operatividad y el cumplimiento normativo.</p>
+                            <a href="proyectos.html" class="turner-cta">Ver Proyectos 
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="portrait-card">
-                <img src="./images/industrial_uno.jpeg" alt="Industriales" class="portrait-img portrait-img-default">
-                <img src="./images/industrial_dos.jpeg" alt="Industriales hover"
-                    class="portrait-img portrait-img-hover">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Industriales</h3>
-                </div>
-            </div>
-            <div class="portrait-card">
-                <img src="./images/banco_familiar_comercial.jpg" alt="Comerciales"
-                    class="portrait-img portrait-img-default">
-                <img src="./images/comercial_dos.png" alt="Comerciales hover" class="portrait-img portrait-img-hover">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Comerciales</h3>
-                </div>
-            </div>
-            <div class="portrait-card">
-                <img src="./images/obra_ingenieria.jpg" alt="Proyectos Especiales"
-                    class="portrait-img portrait-img-default">
-                <div class="portrait-overlay"></div>
-                <div class="portrait-content">
-                    <h3 class="portrait-title">Proyectos<br>Especiales</h3>
-                </div>
-            </div>
-        </div>
-    </section>
 
+                <!-- Box 3 -->
+                <div class="turner-box">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop" alt="Comercial">
+                    <div class="turner-box-overlay">
+                        <div class="turner-title">Comercial</div>
+                        <div class="turner-hidden-content">
+                            <p>Centros corporativos, sucursales bancarias y espacios retail diseñados para potenciar la experiencia del cliente y el rendimiento del negocio.</p>
+                            <a href="proyectos.html" class="turner-cta">Ver Proyectos 
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- BLOQUE 3: OBRAS DESTACADAS -->
-    <section class="projects-section">
-        <div class="container projects-header">
-            <div>
-                <h2><strong>PROYECTOS</strong> SELECCIONADOS</h2>
-                <p style="margin-top: 10px; color: #666;">Una selección representativa de nuestro trabajo reciente.</p>
+                <!-- Box 4 -->
+                <div class="turner-box">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356f58?q=80&w=800&auto=format&fit=crop" alt="Especiales">
+                    <div class="turner-box-overlay">
+                        <div class="turner-title">Especiales</div>
+                        <div class="turner-hidden-content">
+                            <p>Obras de infraestructura, reformas de alta complejidad y proyectos singulares que requieren de ingeniería avanzada e innovación.</p>
+                            <a href="proyectos.html" class="turner-cta">Ver Proyectos 
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <a href="proyectos.html" class="cta-link">Ver todos los proyectos →</a>
-        </div>
-        <div class="projects-grid">
-            <div class="project-box placeholder-dark"><span>PROYECTO 01</span></div>
-            <div class="project-box placeholder-light"><span>PROYECTO 02</span></div>
-            <div class="project-box placeholder-dark"><span>PROYECTO 03</span></div>
         </div>
     </section>
 
@@ -182,10 +210,10 @@
                 <div class="footer-cols">
                     <div class="footer-col">
                         <h4 class="footer-col-title">Servicios</h4>
-                        <a href="servicios-v2.html#sectores" class="footer-col-item">Residenciales</a>
-                        <a href="servicios-v2.html#sectores" class="footer-col-item">Industriales</a>
-                        <a href="servicios-v2.html#sectores" class="footer-col-item">Comerciales</a>
-                        <a href="servicios-v2.html#sectores" class="footer-col-item">Proyectos Especiales</a>
+                        <a href="servicios-v2.html" class="footer-col-item">Residenciales</a>
+                        <a href="servicios-v2.html" class="footer-col-item">Industriales</a>
+                        <a href="servicios-v2.html" class="footer-col-item">Comerciales</a>
+                        <a href="servicios-v2.html" class="footer-col-item">Proyectos Especiales</a>
                     </div>
                     <div class="footer-col">
                         <h4 class="footer-col-title">Empresa</h4>
