@@ -987,10 +987,16 @@ body.page-capacidades .portrait-card:hover {
 }
 
 .servicios-v2-hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 400;
     margin: 0;
     letter-spacing: -1px;
+}
+
+.servicios-v2-hero h1 span {
+    color: #FBD148;
+    font-family: 'Georgia', serif;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
@@ -1047,10 +1053,11 @@ body.page-capacidades .portrait-card:hover {
 }
 
 .approach-text-col h3 {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 20px;
     color: #1a1a1a;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 .approach-text-col p {
@@ -1136,12 +1143,25 @@ body.page-capacidades .portrait-card:hover {
 }
 
 .turner-title {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: clamp(15px, 1.4vw, 21px);
+    font-weight: 400;
     color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.5;
     margin-bottom: 10px;
     transform: translateY(20px);
     transition: transform 0.4s ease;
+}
+
+.turner-title::after {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: rgba(251, 209, 72, 0.75);
+    margin: 14px 0 0;
 }
 
 .turner-box:hover .turner-title {
