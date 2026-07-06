@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | Anderson</title>
+    <title>Proyectos | Anderson</title>
     <link rel="icon" type="image/png" href="images/anderon_logo_png.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="page-nosotros">
+<body class="page-proyectos-v2">
 <header id="header" class="header">
         <div class="header-container">
 
@@ -37,7 +37,7 @@
                 <ul class="header-ul">
                     <li class="header-li"><a href="nosotros.html" class="header-link">Nosotros</a></li>
                     <li class="header-li"><a href="servicios-v2.html" class="header-link">Servicios</a></li>
-                    <li class="header-li"><a href="proyectos-v2.html" class="header-link">Proyectos</a></li>
+                    <li class="header-li"><a href="proyectos-v2.html" class="header-link header-active">Proyectos</a></li>
                     <li class="header-li"><a href="contacto.html" class="header-link">Contacto</a></li>
                 </ul>
             </nav>
@@ -47,47 +47,66 @@
 
 
     <!-- ============ SUBPAGE HERO ============ -->
-    <section class="subpage-hero" style="background-image: url('images/nosotros_hero.webp');">
+    <section class="subpage-hero" style="background-image: url('./images/bunch_of_webps/brezza_hero_projects.webp');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="subpage-hero-title"><span>Nosotros</span></h1>
+            <h1 class="subpage-hero-title"><span>Proyectos</span></h1>
         </div>
     </section>
 
-    <!-- ============ NOSOTROS PAGE ============ -->
-    <section id="origen" class="container" style="padding-top: 80px;">
-        <h2 class="section-title"><div class="accent-mark" style="display:inline-block; vertical-align:middle; margin-right:10px;"></div>Nuestro <span>Origen</span></h2>
-        <p style="text-align:center; max-width:800px; margin:0 auto; font-size:1.1rem; line-height:1.6;"><!-- TODO: client copy -->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </section>
+    <!-- ============ GALLERY SECTION ============ -->
+    <section class="container" style="padding-top: 80px;">
+        <div class="gallery-container">
+            <!-- Item 1 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/brezza_hero_projects.webp" alt="Proyecto Residencial Brezza">
+                <div class="gallery-caption">Proyecto Residencial Brezza</div>
+            </div>
 
-    <!-- BANNER EQUIPO -->
-    <section class="crew-banner">
-        <img src="./images/anderson_crew.png" alt="Equipo Anderson" class="crew-banner-img">
-        <div class="crew-banner-content">
-            <h2>Seguimos <span>Creciendo</span></h2>
+            <!-- Item 2 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/templo__asuncion_interiores.webp" alt="Interiores de Templo — Asunción">
+                <div class="gallery-caption">Interiores de Templo — Asunción</div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/disenho_de_cubierta_de_explanada_basilica_caacupe.webp" alt="Diseño de Cubierta de Explanada — Basílica de Caacupé">
+                <div class="gallery-caption">Diseño de Cubierta de Explanada — Basílica de Caacupé</div>
+            </div>
+
+            <!-- Row: Portraits Pair -->
+            <div class="gallery-pair-row">
+                <div class="gallery-item">
+                    <img src="./images/bunch_of_webps/capilla_construccion_hernandariaas.webp" alt="Construcción de Capilla — Hernandarias">
+                    <div class="gallery-caption">Construcción de Capilla — Hernandarias</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/bunch_of_webps/fabricacion_montaje_de_torre_simbolo.webp" alt="Montaje de Torre Símbolo">
+                    <div class="gallery-caption">Montaje de Torre Símbolo</div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/tablestacado_para_proteccion_de_torre_cliente_adm_villeta.webp" alt="Tablestacado para Protección de Torre — ADM Villeta">
+                <div class="gallery-caption">Tablestacado para Protección de Torre — ADM Villeta</div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/construccion_capilla_villeta.webp" alt="Construcción de Capilla — Villeta">
+                <div class="gallery-caption">Construcción de Capilla — Villeta</div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="gallery-item">
+                <img src="./images/bunch_of_webps/capilla_construccion_ampliacion_villeta.webp" alt="Ampliación de Capilla — Villeta">
+                <div class="gallery-caption">Ampliación de Capilla — Villeta</div>
+            </div>
         </div>
     </section>
 
-    <section id="trayectoria" class="container">
-        <h2 class="section-title">Nuestra <span>Trayectoria</span></h2>
-        <div class="timeline" style="max-width:600px; margin:0 auto;">
-            <div style="border-left: 2px solid #FBD148; padding-left: 20px; margin-bottom: 20px;">
-                <h3 style="color:#FBD148;">2017</h3>
-                <h4>Fundación</h4>
-                <p style="font-size:0.9rem; color:#666;">Iniciamos operaciones en Asunción.</p>
-            </div>
-            <div style="border-left: 2px solid #FBD148; padding-left: 20px; margin-bottom: 20px;">
-                <h3 style="color:#FBD148;">2020</h3>
-                <h4>Expansión</h4>
-                <p style="font-size:0.9rem; color:#666;">Apertura de la división industrial.</p>
-            </div>
-            <div style="border-left: 2px solid #FBD148; padding-left: 20px;">
-                <h3 style="color:#FBD148;">2025</h3>
-                <h4>Liderazgo</h4>
-                <p style="font-size:0.9rem; color:#666;">Consolidación como líderes del sector.</p>
-            </div>
-        </div>
-    </section>
 
 <footer class="footer-section">
         <div class="footer-container">

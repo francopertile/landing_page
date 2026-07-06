@@ -83,7 +83,7 @@ document.querySelectorAll('.portrait-card').forEach(card => {
     panel.innerHTML = `
         <a href="nosotros.html">Nosotros</a>
         <a href="servicios-v2.html">Servicios</a>
-        <a href="proyectos.html">Proyectos</a>
+        <a href="proyectos-v2.html">Proyectos</a>
         <a href="contacto.html">Contacto</a>
     `;
 
@@ -106,3 +106,40 @@ document.querySelectorAll('.portrait-card').forEach(card => {
         });
     });
 })();
+
+// --- Scroll-Active Gallery Zoom & Highlight Effect ---
+document.addEventListener('DOMContentLoaded', () => {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    if (galleryItems.length === 0) return;
+
+    function updateCenteredGalleryItem() {
+        const viewportCenter = window.innerHeight / 2;
+        let closestItem = null;
+        let closestDistance = Infinity;
+
+        galleryItems.forEach(item => {
+            const rect = item.getBoundingClientRect();
+            // Get center point of current element relative to viewport
+            const itemCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(viewportCenter - itemCenter);
+
+            if (distance < closestDistance) {
+                closestDistance = distance;
+                closestItem = item;
+            }
+        });
+
+        galleryItems.forEach(item => {
+            if (item === closestItem) {
+                item.classList.add('is-centered');
+            } else {
+                item.classList.remove('is-centered');
+            }
+        });
+    }
+
+    // Run on scroll, resize and initial load
+    window.addEventListener('scroll', updateCenteredGalleryItem);
+    window.addEventListener('resize', updateCenteredGalleryItem);
+    updateCenteredGalleryItem();
+});
