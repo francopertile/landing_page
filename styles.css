@@ -332,7 +332,8 @@
         .projects-header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 20px; }
         .projects-header h2 { font-size: 24px; font-weight: 300; margin: 0; }
         .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; width: 100%; max-width: 100%; }
-        .project-box { aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; }
+        .project-box { aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; transition: filter 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; }
+        .project-box:hover { transform: scale(1.03); filter: brightness(1.1); z-index: 2; box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
         .project-box span { color: #fff; font-weight: bold; letter-spacing: 2px; }
         .placeholder-dark { background-color: #333333; }
         .placeholder-light { background-color: #444444; }
