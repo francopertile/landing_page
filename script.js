@@ -82,7 +82,7 @@ document.querySelectorAll('.portrait-card').forEach(card => {
     panel.className = 'mobile-nav-panel';
     panel.innerHTML = `
         <a href="nosotros.html">Nosotros</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="servicios-v2.html">Servicios</a>
         <a href="proyectos.html">Proyectos</a>
         <a href="contacto.html">Contacto</a>
     `;
